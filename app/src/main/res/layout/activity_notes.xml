@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAA8A8"
+    tools:context=".NotesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/upper_relative"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/temp_img"
+            android:src="@drawable/ic_baseline_add_a_photo_24"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/edit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/upper_relative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:maxLength="20"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/edit_Title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Content"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/text_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text_priority"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/edit_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Priority"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_priority"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/text_priority"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:hint="Enter in integer"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/edit_priority"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/text_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:hint="only if u want to add password"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/edit_password"
+        android:id="@+id/relative"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/imageView"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#88E8DE"
+            android:text="SUBMIT"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

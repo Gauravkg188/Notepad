@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="table_name">notes</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="priority">Priority</string>
+    <string name="password">Password</string>
+    <string name="date">Date</string>
+</resources>
